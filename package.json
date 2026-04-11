@@ -1,0 +1,33 @@
+{
+  "name": "@tryforge/forge.extension",
+  "version": "1.0.0",
+  "description": "A ForgeScript extension",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/__tests__/index.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "forgescript",
+    "forge",
+    "discord",
+    "bot"
+  ],
+  "license": "GPL-3.0-or-later",
+  "peerDependencies": {
+    "@tryforge/forgescript": "^2.0.0"
+  },
+  "devDependencies": {
+    "@tryforge/forgescript": "^2.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "tiny-typed-emitter": "^2.1.0"
+  }
+}
